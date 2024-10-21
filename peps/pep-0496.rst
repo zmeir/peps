@@ -126,7 +126,7 @@ corresponding marker variable MUST be considered equivalent to ``0``
 Version numbers
 ---------------
 
-* ``python_version``: ``platform.python_version()[:3]``
+* ``python_version``: ``platform.python_version().rsplit(".", 1)[0]``
 * ``python_full_version``: see definition below
 * ``platform_version``: ``platform.version()``
 * ``implementation_version``: see definition below
